@@ -1,4 +1,5 @@
 version: 2.1
+
 jobs:
   test:
     docker:
@@ -12,6 +13,7 @@ jobs:
       - store_artifacts:
         path: /tmp/hello-latest.zip
         destination: hello-latest.zip
+
 workflows:
   welcome:
     jobs:
